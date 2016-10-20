@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Map</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Proza+Libre"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+	<ul id="slide-out" class="side-nav">
+	    <li><div class="userView">
+	      <img class="background" src="images/office.jpg">
+	      <a href="#!user"><img class="circle responsive-img" src="images/yuna.jpg"></a>
+	      <a href="#!name"><span class="white-text name">Andrea</span></a>
+	      <a href="profile.html"><span class="white-text email">View profile</span></a>
+	    </div></li>
+	    <li><a href="#!"><i class="material-icons">place</i>Home</a></li>
+	    <li><a href="#!"><i class="material-icons">redeem</i>Free Rides</a></li>
+	    <li><a href="#!"><i class="material-icons">restore</i>Rides History</a></li>
+	    <li><a href="#!"><i class="material-icons">payment</i>Payment</a></li>
+	    <li><a href="#!"><i class="material-icons">help</i>Help</a></li>
+	    <li><a href="#!"><i class="material-icons">seettings</i>Settings</a></li>
+	    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+	</ul>
+	<a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>		
+
+	<header>
+		<nav>
+			<div class="contenedor-mapa container-fluid text-center">
+				<div class="row">
+					<div class="col s3">
+						<a href="#" data-activates="slide-out" class="button-collapse"></a>
+					</div>
+					<div class="col s6 center">
+						<img class="responsive-img" src="img/logo.png" alt="logo Lyft">
+					</div>
+					<div class="col s3">
+						<a href="#"><i class="material-icons">group_work</i></a>
+					</div>
+				</div>				
+			</div>			
+		</nav>
+	</header>
+	<div id="mapa" class="map"></div>
+	<section>
+		<div class="contenedor-mapa container-fluid">
+			<div class="row">
+				<div class="col s12">
+					<div class="row">
+						<div class="input-field col s12">
+							<input class="validate" id="direccion" type="text" placeholder="Ubicación">
+						</div>
+					</div>
+					<div class="row">
+						<div class="input-field col s12">
+				    		<a id="" class="boton btn-large" href="#">Set a pick up</a>	
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>		
+	</section>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbaommEK_ecLxn5uo1g-fOmV3bNdsH24c" async defer></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/sweetalert-dev.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+</body>
+</html>

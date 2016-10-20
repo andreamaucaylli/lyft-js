@@ -1,6 +1,5 @@
 *{
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 .fondo {
@@ -9,10 +8,16 @@
 	background-position: center;
 	min-height: 100vh;
 	min-width: 100vw;
+	overflow: hidden;
 }
 
 .main {
 	position: relative;
+}
+
+.line {
+	border-bottom: 0.1rem gray solid;
+	margin-bottom: 2rem;
 }
 
 .boton {
@@ -50,4 +55,22 @@
 
 .inputCodigo {
 	display: flex;
+}
+
+.map {
+	min-width: 100vw;
+	min-height: 100vh;
+	position: absolute;
+	z-index: 1;
+}
+
+.contenedor-mapa {
+	margin-top: 4vh;
+	position: absolute;
+	z-index: 2;
+	width: 100vw;
+}
+
+#profile {
+	cursor: pointer;	
 }
